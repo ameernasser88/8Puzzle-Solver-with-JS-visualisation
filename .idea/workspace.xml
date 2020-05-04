@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="8ed8a3e7-290c-43e0-9264-cdf961d3be76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PuzzleSolver/PuzzleSolver/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/PuzzleSolver/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PuzzleSolver/PuzzleSolver/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/PuzzleSolver/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PuzzleSolver/Templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/Templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PuzzleSolver/Templates/solve.html" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/Templates/solve.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PuzzleSolver/core/8-puzzle-solver/PuzzleBoard.py" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/core/puzzlesolver/PuzzleBoard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PuzzleSolver/core/8-puzzle-solver/Search_algorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/core/puzzlesolver/Search_algorithms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PuzzleSolver/core/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/core/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PuzzleSolver/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PuzzleSolver/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/PuzzleSolver/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\AI\8Puzzle\PuzzleSolver\Templates" />
       <recent name="D:\Projects\AI\8Puzzle\PuzzleSolver\core\8-puzzle-solver" />
       <recent name="D:\Projects\AI\8Puzzle\PuzzleSolver\core" />
     </key>
@@ -72,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588472108189</updated>
       <workItem from="1588472122742" duration="616000" />
-      <workItem from="1588537533930" duration="3778000" />
+      <workItem from="1588537533930" duration="7813000" />
     </task>
     <servers />
   </component>

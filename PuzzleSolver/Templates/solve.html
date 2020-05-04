@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>A* Manhattan</title>
+	<title>{{name}}</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -35,15 +35,15 @@
 <br>
 
 <div class="grid-container" style="width: 500px; height: 500px;">
-  <div class="grid-item"  > <span id="tile0">0</span></div>
-  <div class="grid-item"  > <span id="tile1">1</span></div>
-  <div class="grid-item"  > <span id="tile2">2</span></div> 
-  <div class="grid-item"  > <span id="tile3">3</span></div>
-  <div class="grid-item"  > <span id="tile4">4</span></div>
-  <div class="grid-item"  > <span id="tile5">5</span></div>
-  <div class="grid-item"  > <span id="tile6">6</span></div>
-  <div class="grid-item"  > <span id="tile7">7</span></div>
-  <div class="grid-item"  > <span id="tile8">8</span></div>  
+  <div class="grid-item"  > <span id="tile0">{{initial_state.0}}</span></div>
+  <div class="grid-item"  > <span id="tile1">{{initial_state.1}}</span></div>
+  <div class="grid-item"  > <span id="tile2">{{initial_state.2}}</span></div>
+  <div class="grid-item"  > <span id="tile3">{{initial_state.3}}</span></div>
+  <div class="grid-item"  > <span id="tile4">{{initial_state.4}}</span></div>
+  <div class="grid-item"  > <span id="tile5">{{initial_state.5}}</span></div>
+  <div class="grid-item"  > <span id="tile6">{{initial_state.6}}</span></div>
+  <div class="grid-item"  > <span id="tile7">{{initial_state.7}}</span></div>
+  <div class="grid-item"  > <span id="tile8">{{initial_state.8}}</span></div>
 </div>
 
 
@@ -57,10 +57,7 @@
 
 	$(function () {
   count = 0;
-  arr = [[1, 8, 2, 4, 0, 3, 7, 6, 5], [1, 0, 2, 4, 8, 3, 7, 6, 5], [0, 1, 2, 4, 8, 3, 7, 6, 5], [4, 1, 2, 0, 8, 3, 7, 6, 5], [4, 1, 2, 7, 8, 3, 0, 6, 5], [4, 1, 2, 7, 8, 3, 6, 0
-, 5], [4, 1, 2, 7, 0, 3, 6, 8, 5], [4, 1, 2, 7, 3, 0, 6, 8, 5], [4, 1, 0, 7, 3, 2, 6, 8, 5], [4, 0, 1, 7, 3, 2, 6, 8, 5], [4, 3, 1, 7, 0, 2, 6, 8, 5], [4, 3, 1, 0, 7, 2, 6, 8, 5], [0, 3,
- 1, 4, 7, 2, 6, 8, 5], [3, 0, 1, 4, 7, 2, 6, 8, 5], [3, 1, 0, 4, 7, 2, 6, 8, 5], [3, 1, 2, 4, 7, 0, 6, 8, 5], [3, 1, 2, 4, 7, 5, 6, 8, 0], [3, 1, 2, 4, 7, 5, 6, 0, 8], [3, 1, 2, 4, 0, 5,
- 6, 7, 8], [3, 1, 2, 0, 4, 5, 6, 7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8]];
+  arr = {{states|safe}}
   setInterval(function () {
     count++;
 
