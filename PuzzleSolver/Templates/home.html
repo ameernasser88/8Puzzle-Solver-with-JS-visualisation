@@ -8,18 +8,39 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .center_div{
+    margin: 0 auto;
+    width:40%
+}
+        .center_h1{
+    margin: 0 auto;
+    width:100%
+}
+    </style>
 </head>
-<body>
+
+<body style="background: #ecf2ef;">
 
 <div class ="container">
     <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <div class="center_div">
+        <h1 style="color:#2196F3; font-size: 64px; " class="center_h1"> 8 Puzzle Solver </h1>
+         <br>
     <br>
 <form  method="post">
     {% csrf_token %}
     {{ form|crispy }}
     <input type="submit" value="Solve" class="btn btn-info btn-block">
 </form>
-
+</div>
     </div>
 </body>
 </html>

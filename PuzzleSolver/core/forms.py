@@ -9,5 +9,5 @@ CHOICES = (
 
 
 class HomeForm(forms.Form):
-    initial_state = forms.CharField(label='Enter Initial State separated by , : ', max_length=18)
+    initial_state = forms.CharField(label='Enter Initial State separated by , : ')
     search_algorithm = forms.ChoiceField(label="Search Algorithm : ",choices=CHOICES,required=True)
