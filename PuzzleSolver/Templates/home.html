@@ -1,0 +1,25 @@
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8 Puzzle Solver</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class ="container">
+    <br>
+    <br>
+<form action="/your-name/" method="post">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <input type="submit" value="Solve" class="btn btn-info btn-block">
+</form>
+
+    </div>
+</body>
+</html>

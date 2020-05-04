@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A* Manhattan</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+  <style>
+.grid-container {
+	margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 80px;
+  text-align: center;
+}
+</style>
+	
+</head>
+
+
+
+<body>
+
+
+<br>
+<br>
+
+<div class="grid-container" style="width: 500px; height: 500px;">
+  <div class="grid-item"  > <span id="tile0">0</span></div>
+  <div class="grid-item"  > <span id="tile1">1</span></div>
+  <div class="grid-item"  > <span id="tile2">2</span></div> 
+  <div class="grid-item"  > <span id="tile3">3</span></div>
+  <div class="grid-item"  > <span id="tile4">4</span></div>
+  <div class="grid-item"  > <span id="tile5">5</span></div>
+  <div class="grid-item"  > <span id="tile6">6</span></div>
+  <div class="grid-item"  > <span id="tile7">7</span></div>
+  <div class="grid-item"  > <span id="tile8">8</span></div>  
+</div>
+
+
+
+
+</body>
+
+<script >
+	
+
+
+	$(function () {
+  count = 0;
+  arr = [[1, 8, 2, 4, 0, 3, 7, 6, 5], [1, 0, 2, 4, 8, 3, 7, 6, 5], [0, 1, 2, 4, 8, 3, 7, 6, 5], [4, 1, 2, 0, 8, 3, 7, 6, 5], [4, 1, 2, 7, 8, 3, 0, 6, 5], [4, 1, 2, 7, 8, 3, 6, 0
+, 5], [4, 1, 2, 7, 0, 3, 6, 8, 5], [4, 1, 2, 7, 3, 0, 6, 8, 5], [4, 1, 0, 7, 3, 2, 6, 8, 5], [4, 0, 1, 7, 3, 2, 6, 8, 5], [4, 3, 1, 7, 0, 2, 6, 8, 5], [4, 3, 1, 0, 7, 2, 6, 8, 5], [0, 3,
+ 1, 4, 7, 2, 6, 8, 5], [3, 0, 1, 4, 7, 2, 6, 8, 5], [3, 1, 0, 4, 7, 2, 6, 8, 5], [3, 1, 2, 4, 7, 0, 6, 8, 5], [3, 1, 2, 4, 7, 5, 6, 8, 0], [3, 1, 2, 4, 7, 5, 6, 0, 8], [3, 1, 2, 4, 0, 5,
+ 6, 7, 8], [3, 1, 2, 0, 4, 5, 6, 7, 8], [0, 1, 2, 3, 4, 5, 6, 7, 8]];
+  setInterval(function () {
+    count++;
+
+
+    if ($('#tile0').text() !=arr[count][0]){
+    $("#tile0").fadeOut(400, function () {
+      $(this).text(arr[count][0]).fadeIn(400);
+    });
+		}
+
+
+		if ($('#tile1').text() !=arr[count][1]){
+    $("#tile1").fadeOut(400, function () {
+      $(this).text(arr[count][1]).fadeIn(400);
+    });
+		}
+
+		if ($('#tile2').text() !=arr[count][2]){
+    $("#tile2").fadeOut(400, function () {
+      $(this).text(arr[count][2]).fadeIn(400);
+    });
+		}
+
+		if ($('#tile3').text() !=arr[count][3]){
+    $("#tile3").fadeOut(400, function () {
+      $(this).text(arr[count][3]).fadeIn(400);
+    });
+		}
+
+		if ($('#tile4').text() !=arr[count][4]){
+    $("#tile4").fadeOut(400, function () {
+      $(this).text(arr[count][4]).fadeIn(400);
+    });
+		}
+
+		if ($('#tile5').text() !=arr[count][5]){
+    $("#tile5").fadeOut(400, function () {
+      $(this).text(arr[count][5]).fadeIn(400);
+    });
+		}
+
+		if ($('#tile6').text() !=arr[count][6]){
+    $("#tile6").fadeOut(400, function () {
+      $(this).text(arr[count][6]).fadeIn(400);
+    });
+		}
+
+		if ($('#tile7').text() !=arr[count][7]){
+    $("#tile7").fadeOut(400, function () {
+      $(this).text(arr[count][7]).fadeIn(400);
+    });
+		}
+
+		if ($('#tile8').text() !=arr[count][8]){
+    $("#tile8").fadeOut(400, function () {
+      $(this).text(arr[count][8]).fadeIn(400);
+    });
+		}
+
+   
+
+  }, 2000);
+});
+</script>
+
+
+</html>
